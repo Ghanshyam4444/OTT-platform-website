@@ -10,4 +10,3 @@ const connectDB = async () => {
   }
 };
 module.exports = connectDB;
-// mongodb+srv://ghanshyammangla43:mangla@cluster0.728pl.mongodb.net/viewvibe_project?retryWrites=true&w=majority&appName=Cluster0
