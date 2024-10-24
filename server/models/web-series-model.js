@@ -1,0 +1,63 @@
+const mongoose=require("mongoose");
+const webseriesSchema=new mongoose.Schema({
+    webSeriesName:{
+        type:String,
+        required:true,
+    },
+    WebSeriesImageURL:{
+        type:String,
+        required:true,
+    },
+    description:{
+        type:String,
+        required:true,
+    },
+    tags:{
+        type:[String],
+        required:true
+    },
+    ageLimit:{
+        type:Number,
+        required:true
+    },
+    isPremiumWebSeries:{
+        type:Boolean,
+        required:true
+    },
+    rating:{
+        type:String,
+        required:true
+    },
+    language:{
+        type:String,
+        required:true
+    },
+    seasons:{
+        type:[
+            {
+                seasonNumber:{type:String,required:true},
+                seasonFolderName:{type:String,required:true},
+                seasonImageName:{type:String,required:true},
+                seasonHoriImageName:{type:String,required:true},
+                episodes:{
+                    type:[
+                        {
+                            episodeNumber:{type:String,required:true},
+                            title:{type:String,required:true},
+                            description:{type:String,required:true},
+                            duration:{type:String,required:true},
+                            rating:{type:String,required:true},
+                            videoUrl:{type:String,required:true},
+                        }
+                    ],
+                    required:true,
+                }
+            },
+        ],
+        required:true,
+    }
+    
+    
+})
+const WebSeries=new mongoose.model("WebSeries",webseriesSchema);
+module.exports=WebSeries;

@@ -1,0 +1,40 @@
+.admin_container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.admin_nav_bar {
+    display: flex;
+    gap: 20px;
+}
+
+.admin_nav_bar li {
+    list-style: none;
+}
+
+.admin_nav_link {
+    text-decoration: none;
+    padding: 10px 15px;
+    color:white ;
+}
+
+.admin_nav_link:hover {
+    /* background-color: #f0f0f0;  */
+    border-radius: 5px;
+}
+.admin_nav_link {
+    font-size: large;
+    text-decoration: none; /* Remove default underline */
+    padding: 10px 15px; /* Add padding for better spacing */
+    color: white; /* Default link color */
+    position: relative; /* Needed for absolute positioning */
+}
+
+.admin_nav_link:hover{
+    color: aqua;
+}
+.admin_nav_link.active{
+
+    color: aqua;
+}

@@ -1,0 +1,144 @@
+.add-movie-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color:#333;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #28619b; /* Dark color matching Bootstrap's dark theme */
+    color: white; /* Set default text color to white for readability */
+}
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group input{
+    color: black;
+}
+
+.add-movie-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-top: 2%;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    /* color: #555; */
+}
+
+.form-group textarea{
+    color: black;
+}
+.add-movie-form input,
+.add-movie-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.add-movie-form input:focus,
+.add-movie-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between checkboxes */
+    margin-bottom: 15px;
+}
+.tagscontainer{
+    margin-top: 10px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column; /* Stack checkbox and label vertically */
+    align-items: center; /* Center the checkbox and label */
+    margin-right: 20px; /* Space to the right */
+}
+
+.checkbox input {
+    margin-bottom: 5px; /* Space between checkbox and label */
+}
+
+.checkbox-label {
+    font-size: 14px; /* Adjust label font size if needed */
+    /* color: #555; Label color */
+}
+
+
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.textarea {
+    resize: vertical;
+}
+
+.isPremiumcontainer{
+    display: flex;
+}
+.registration_isPremium{
+    margin-left: 5%;
+    display: flex;
+}
+.isPremium{
+    display: flex;
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+/* movie video container */
+#replace_movie{
+    width: 100%;
+    height: 80vh;
+}
